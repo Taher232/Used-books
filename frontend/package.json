@@ -7,8 +7,12 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "react-service-worker": "^0.1.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -19,9 +23,14 @@
   },
   "eslintConfig": {
     "extends": [
+      "plugin:react/recommended",
       "react-app",
       "react-app/jest"
-    ]
+     
+    ],
+    "rules":{
+      "react/prop-types": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.27.0"
   }
 }
